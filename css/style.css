@@ -186,3 +186,8 @@ body {
 .cart__amount {
     padding-left: 18px;
 }
+
+/* SLIDER */
+.slider__wrapper {
+    width: 1160px;
+}
