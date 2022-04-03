@@ -12,169 +12,182 @@
     <title>Ya Bao</title>
 </head>
 <body>
-    <header class="header container">
-        <div class="header__wrapper wrapper">
-            <div class="header__side">
-                <div class="header__left">
-                    <div class="header__logo logo">
-                        <div class="logo__image">
-                            <img class="logo__img" src="img/logo.png" alt="Yabao">
+    <header class="header">
+        <div class="header__container container">
+            <div class="header__wrapper wrapper">
+                <div class="header__side">
+                    <div class="header__left">
+                        <div class="header__logo logo">
+                            <a class="logo__image" href="#" title="Main">
+                                <img class="logo__img" src="img/logo.png" alt="Yabao">
+                            </a>
+                        </div>
+                        <div class="header__delivery delivery">
+                            <div class="delivery__geo">
+                                <div class="delivery__subject">Доставка пасты</div>
+                                <button class="delivery__city button">Москва</button>
+                            </div>
+                            <div class="delivery__time">
+                                <div class="delivery__pending">Время доставки</div>
+                                <div class="delivery__timer">от 31 мин</div>
+                            </div>
                         </div>
                     </div>
-                    <div class="header__delivery delivery">
-                        <div class="delivery__geo">
-                            <div class="delivery__subject">Доставка пасты</div>
-                            <button class="delivery__city">Москва</button>
+                    <div class="header__right">
+                        <div class="header__callback callback">
+                            <button class="callback__button button">Заказать звонок</button>
                         </div>
-                        <div class="delivery__time">
-                            <div class="delivery__pending">Время доставки</div>
-                            <div class="delivery__timer">от 31 мин</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="header__right">
-                    <div class="header__callback callback">
-                        <button class="callback__button button">Заказать звонок</button>
-                    </div>
 
-                    <div class="header__phone phone">
-                        <a class="phone__number" href="tel:88003333662">8 800 333-36-62</a>
+                        <div class="header__link link">
+                            <a class="link__target" href="tel:88003333662">8 800 333-36-62</a>
+                        </div>
                     </div>
                 </div>
+
+                <div class="header__side"> 
+                    <div class="header__left">
+                        <nav class="header__menu menu">
+                            <ul class="menu__list">
+                                <li class="menu__item"><a class="menu__link" href="#">Паста</a></li>
+                                <li class="menu__item"><a class="menu__link" href="#">Супы</a></li>
+                                <li class="menu__item"><a class="menu__link" href="#">Салаты</a></li>
+                                <li class="menu__item"><a class="menu__link" href="#">Антипасти</a></li>
+                                <li class="menu__item"><a class="menu__link" href="#">Напитки</a></li>
+                                <li class="menu__item"><a class="menu__link" href="#">Десерты</a></li>
+                                <li class="menu__item"><a class="menu__link" href="#">Бакалея</a></li>
+                                <li class="menu__item"><a class="menu__link" href="#">Акции</a></li>
+                                <li class="menu__item"><a class="menu__link" href="#">Комбо</a></li>
+                                <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header__right">
+                        <div class="header__auth auth">
+                            <button class="auth__login button">Войти</button>
+                            <button class="auth__cart button">
+                                <div class="cart__text">Корзина</div>
+                                <div class="cart__amount">1</div>
+                            </button>
+                        </div>
+                    </div>
+                </div> 
             </div>
-
-            <div class="header__side"> 
-                <div class="header__left">
-                    <nav class="header__menu menu">
-                        <ul class="menu__list">
-                            <li class="menu__item"><a class="menu__link" href="#">Паста</a></li>
-                            <li class="menu__item"><a class="menu__link" href="#">Супы</a></li>
-                            <li class="menu__item"><a class="menu__link" href="#">Салаты</a></li>
-                            <li class="menu__item"><a class="menu__link" href="#">Антипасти</a></li>
-                            <li class="menu__item"><a class="menu__link" href="#">Напитки</a></li>
-                            <li class="menu__item"><a class="menu__link" href="#">Десерты</a></li>
-                            <li class="menu__item"><a class="menu__link" href="#">Бакалея</a></li>
-                            <li class="menu__item"><a class="menu__link" href="#">Акции</a></li>
-                            <li class="menu__item"><a class="menu__link" href="#">Комбо</a></li>
-                            <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="header__right">
-                    <div class="header__authentification authentification">
-                        <button class="authentification__login button">Войти</button>
-                        <button class="authentification__cart button">
-                            <div class="cart__text">Корзина</div>
-                            <div class="cart__amount">1</div>
-                        </button>
-                    </div>
-                </div>
-            </div> 
         </div>
     </header>
 
     <main class="main">
-        <section class="slider container">
-            <div class="slider__wrapper wrapper">
-                <ul class="slider__list">
-                    <li class="slider__item">
-                        <img class="slider__img" src="img/slide_1.png" alt="">             
-                    </li>
-                </ul>
+        <section class="slider">
+            <div class="slider__container container">
+                <div class="slider__wrapper wrapper">
+                    <ul class="slider__list">
+                        <li class="slider__item">
+                            <img class="slider__img" src="img/slide_1.png" alt="">             
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
 
-        <section class="reviews container">
-            <div class="reviews__wrapper wrapper">
-                <h3 class="reviews__header">Отзывы</h3>
-                <ul class="reviews__list">
-                    <li class="reviews__item review">
-                        <div class="review__image">
+        <section class="reviews">
+            <div class="reviews__container container">
+                <div class="reviews__wrapper wrapper">
+                    <h3 class="reviews__title">Отзывы</h3>
+                    <ul class="reviews__list">
+                        <li class="reviews__item review">
                             <a class="review__link" href="#">
-                                <img class="review__img" src="img/review_1.png" alt="Review">
-                            </a>            
-                        </div>
-                        <div class="review__profile">
-                            lauria_gog
-                        </div>  
-                    </li>
-                    <li class="reviews__item review">
-                        <div class="review__image">
+                                <div class="review__image">
+                                        <img class="review__img" src="img/review_1.png" alt="Review">         
+                                </div>
+                                
+                                <div class="review__profile">
+                                    lauria_gog
+                                </div>  
+                            </a>
+                        </li>
+                        <li class="reviews__item review">
                             <a class="review__link" href="#">
-                                <img class="review__img" src="img/review_1.png" alt="Review">
-                            </a>            
-                        </div>
-                        <div class="review__profile">
-                            lauria_gog
-                        </div>  
-                    </li>
-                    <li class="reviews__item review">
-                        <div class="review__image">
+                                <div class="review__image">
+                                        <img class="review__img" src="img/review_1.png" alt="Review">         
+                                </div>
+                                
+                                <div class="review__profile">
+                                    lauria_gog
+                                </div>  
+                            </a>
+                        </li>
+                        <li class="reviews__item review">
                             <a class="review__link" href="#">
-                                <img class="review__img" src="img/review_1.png" alt="Review">
-                            </a>            
-                        </div>
-                        <div class="review__profile">
-                            lauria_gog
-                        </div>  
-                    </li>
-                    <li class="reviews__item review">
-                        <div class="review__image">
+                                <div class="review__image">
+                                        <img class="review__img" src="img/review_1.png" alt="Review">         
+                                </div>
+                                
+                                <div class="review__profile">
+                                    lauria_gog
+                                </div>  
+                            </a>
+                        </li>
+                        <li class="reviews__item review">
                             <a class="review__link" href="#">
-                                <img class="review__img" src="img/review_1.png" alt="Review">
-                            </a>            
-                        </div>
-                        <div class="review__profile">
-                            lauria_gog
-                        </div>  
-                    </li>
-                    <li class="reviews__item review">
-                        <div class="review__image">
+                                <div class="review__image">
+                                        <img class="review__img" src="img/review_1.png" alt="Review">         
+                                </div>
+                                
+                                <div class="review__profile">
+                                    lauria_gog
+                                </div>  
+                            </a>
+                        </li>
+                        <li class="reviews__item review">
                             <a class="review__link" href="#">
-                                <img class="review__img" src="img/review_1.png" alt="Review">
-                            </a>            
-                        </div>
-                        <div class="review__profile">
-                            lauria_gog
-                        </div>  
-                    </li>
-                    <li class="reviews__item review">
-                        <div class="review__image">
+                                <div class="review__image">
+                                        <img class="review__img" src="img/review_1.png" alt="Review">         
+                                </div>
+                                
+                                <div class="review__profile">
+                                    lauria_gog
+                                </div>  
+                            </a>
+                        </li>
+                        <li class="reviews__item review">
                             <a class="review__link" href="#">
-                                <img class="review__img" src="img/review_1.png" alt="Review">
-                            </a>            
-                        </div>
-                        <div class="review__profile">
-                            lauria_gog
-                        </div>  
-                    </li>
-                    <li class="reviews__item review">
-                        <div class="review__image">
+                                <div class="review__image">
+                                        <img class="review__img" src="img/review_1.png" alt="Review">         
+                                </div>
+                                
+                                <div class="review__profile">
+                                    lauria_gog
+                                </div>  
+                            </a>
+                        </li>
+                        <li class="reviews__item review">
                             <a class="review__link" href="#">
-                                <img class="review__img" src="img/review_1.png" alt="Review">
-                            </a>            
-                        </div>
-                        <div class="review__profile">
-                            lauria_gog
-                        </div>  
-                    </li>
-                    <li class="reviews__item review">
-                        <div class="review__image">
+                                <div class="review__image">
+                                        <img class="review__img" src="img/review_1.png" alt="Review">         
+                                </div>
+                                
+                                <div class="review__profile">
+                                    lauria_gog
+                                </div>  
+                            </a> 
+                        </li>
+                        <li class="reviews__item review">
                             <a class="review__link" href="#">
-                                <img class="review__img" src="img/review_1.png" alt="Review">
-                            </a>            
-                        </div>
-                        <div class="review__profile">
-                            lauria_gog
-                        </div>  
-                    </li>
-                </ul>
+                                <div class="review__image">
+                                        <img class="review__img" src="img/review_1.png" alt="Review">         
+                                </div>
+                                
+                                <div class="review__profile">
+                                    lauria_gog
+                                </div>  
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
 
         <section class="novelties container">
             <div class="novelties__wrapper wrapper">
-                <div class="novelties__background"></div>
                 <h3 class="novelties__header">Новинки</h3>
                 <ul class="novelties__list">
                     <li class="novelties__item">
@@ -234,17 +247,18 @@
         </section>
 
 
-        <section class="products container">
-            <div class="products__wrapper wrapper">
-                <h2 class="products__header">Паста</h2>
-                <ul class="products__list">
-                    <li class="products__item">
-                        <div class="products__product product">
-                            
-                        </div>
-                    </li>
-                </ul>
-
+        <section class="products">
+            <div class="products__container">
+                <div class="products__wrapper wrapper">
+                    <h2 class="products__header">Паста</h2>
+                    <ul class="products__list">
+                        <li class="products__item">
+                            <div class="products__product product">
+                                
+                            </div>
+                        </li>
+                    </ul>
+                </div>                       
             </div>
         </section>
 
