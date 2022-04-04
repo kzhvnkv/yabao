@@ -394,5 +394,56 @@ body {
     
 }
 
+/* DISCOUNTS */
+.discounts__header {
+    margin-bottom: 45px;
+    text-align: center;
+    font-size: 44px;
+    font-weight: 700;
+    color: #0E0C0D;
+}
 
+.discounts__header--pink {
+    color: #FF2E65;
+}
 
+.discounts__grid {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.discounts__main {
+    width: 540px;
+    flex: none;
+}
+
+.discounts__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    
+}
+
+.discounts__item {
+    width: 255px;
+    margin-left: 28px;
+}
+
+.discounts__all {
+    display: block;
+    text-align: center;
+    
+}
+
+.discounts__link--all {
+    display: inline-block;
+    padding: 10px 40px;
+    margin-bottom: 60px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 2;
+    background-color: #FF2E65;
+    border-radius: 24px;
+    color: #FFFFFF;
+
+}
