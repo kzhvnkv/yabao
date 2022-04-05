@@ -498,3 +498,138 @@ body {
     padding-right: 15px;
     padding-bottom: 75px;
 }
+
+/* FOOTER */
+
+.footer__wrapper {
+    display: flex;
+    padding-top: 55px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 75px;    
+}
+
+.footer__left {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__logo {
+    margin-bottom: 40px;
+}
+
+.social__title {
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.75;
+}
+
+.menu__list--footer {
+    flex-wrap: wrap;
+    width: 510px;
+    margin-bottom: 23px;
+}
+
+.menu__item--footer {
+    width: 255px;
+    margin-right: 0;
+}
+
+.menu__item--social {
+    width: 255px;
+    margin-right: 0;
+    margin-bottom: 7px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.75;
+}
+
+.footer__copyrights {
+    display: flex;
+    width: 573px;
+    align-items: center;
+
+}
+
+.footer__copyright {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 2;
+}
+
+.paysystem__item {
+    display: inline-block;
+    margin-left: 18px;
+}
+
+.footer__paysystem {
+    margin-left: auto;
+}
+
+.footer__right {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-left: 70px;
+    z-index: 1;
+    
+}
+
+.footer__right::after {
+    content: "";
+    position: absolute;
+    right: -150px;
+    top: 150px;
+    width: 312px;
+    height: 245px;
+    background-image: url("../img/meal.png");
+    background-repeat: no-repeat;
+    z-index: -1;
+
+
+}
+
+
+.footer__title {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 36px;
+}
+
+.footer__messengers {
+    margin-left: -7px;
+    margin-bottom: 26px;
+}
+
+.messengers__list {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+.messenger__item {
+    margin-right: 7px;
+    margin-left: 7px;
+    margin-bottom: 14px;
+}
+
+.messenger__button {
+    padding: 11px 35px;
+    background-color: #FFFFFF;
+    border: 2px solid #E3ECF5;
+    border-radius: 13px;
+    width: 104px;
+    height: 56px;
+}
+
+.messenger__button--last {
+    width: 222px;
+}
+
+.footer__link {
+    margin-bottom: 20px;
+}
+
