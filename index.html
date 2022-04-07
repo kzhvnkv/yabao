@@ -82,7 +82,7 @@
             <div class="section__container section__container--slider container">
                 <div class="section__wrapper">
                     <!-- <h1 class="section__title section__title--h1" style="display:none;">Yabao</h1> -->
-                    <div class="slider">
+                    <div class="section__slider slider">
                         <ul class="slider__list">
                             <li class="slider__item">
                                 <img class="slider__img" src="img/slide_1.png" alt="">             
@@ -95,7 +95,7 @@
 
         <section class="section">
             <div class="section__container section__container--reviews container">
-                <div class="section__wrapper">
+                <div class="section__wrapper section__wrapper--reviews">
                     <h3 class="section__title section__title--h3">Отзывы</h3>
                     <div class="section__reviews reviews">
                         <ul class="reviews__list">
@@ -187,18 +187,18 @@
 
         <section class="section">
             <div class="section__container container">
-                <div class="section__wrapper wrapper">
+                <div class="section__wrapper section__wrapper--novelties">
                     <h3 class="section__title section__title--h3">Новинки</h3>
                     <div class="section__novelties novelties">
                         <ul class="novelties__list">
                             <li class="novelties__item">
                                 <a class="novelties__link" href="#" title="novelty">
-                                    <div class="novelties__button novelty">
+                                    <div class="novelties__novelty novelty">
                                         <div class="novelty__image">
                                             <img class="novelty__img" src="img/novelty.png" alt="Карбонара">
                                         </div>
                                         <div class="novelty__info">
-                                            <div class="novelty__name">Карбонара</div>
+                                            <div class="novelty__title">Карбонара</div>
                                             <div class="novelty__price">от 120 ₽</div>
                                         </div>
                                     </div>                        
@@ -206,12 +206,12 @@
                             </li>
                             <li class="novelties__item">
                                 <a class="novelties__link" href="#" title="novelty">
-                                    <div class="novelties__button novelty">          
+                                    <div class="novelties__novelty novelty">          
                                         <div class="novelty__image">
                                             <img class="novelty__img" src="img/novelty.png" alt="Карбонара">
                                         </div>
                                         <div class="novelty__info">
-                                            <div class="novelty__name">Карбонара</div>
+                                            <div class="novelty__title">Карбонара</div>
                                             <div class="novelty__price">от 120 ₽</div>
                                         </div>
                                     </div>                        
@@ -219,12 +219,12 @@
                             </li>
                             <li class="novelties__item">
                                 <a class="novelties__link" href="#" title="novelty">
-                                    <div class="novelties__button novelty">
+                                    <div class="novelties__novelty novelty">
                                         <div class="novelty__image">
                                             <img class="novelty__img" src="img/novelty.png" alt="Карбонара">
                                         </div>
                                         <div class="novelty__info">
-                                            <div class="novelty__name">Карбонара</div>
+                                            <div class="novelty__title">Карбонара</div>
                                             <div class="novelty__price">от 120 ₽</div>
                                         </div>
                                     </div>                        
@@ -232,12 +232,12 @@
                             </li>
                             <li class="novelties__item">
                                 <a class="novelties__link" href="#" title="novelty">
-                                    <div class="novelties__button novelty">
+                                    <div class="novelties__novelty novelty">
                                         <div class="novelty__image">
                                             <img class="novelty__img" src="img/novelty.png" alt="Карбонара">
                                         </div>
                                         <div class="novelty__info">
-                                            <div class="novelty__name">Карбонара</div>
+                                            <div class="novelty__title">Карбонара</div>
                                             <div class="novelty__price">от 120 ₽</div>
                                         </div>
                                     </div>                        
@@ -249,109 +249,151 @@
             </div>
         </section>
 
-        <section class="products">
-            <div class="products__container container">
-                <div class="products__wrapper wrapper">
-                    <h2 class="products__title">Паста</h2>
-                    <ul class="products__list">
-                        <li class="products__item">
-                            <div class="products__product product">
-                                <img class="product__image" src="img/kevetki_trufel.png" alt="С креветками и трюфелями">
-                                <h3 class="product__title">С креветками и трюфелями</h3>
-                                <p class="product__text">Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан. 350 г</p>
-                                <div class="product__select">
-                                    <div class="product__price">от 600 ₽</div>
-                                    <button class="product__button btn btn--add">В корзину</button>
+        <section class="section">
+            <div class="section__container container">
+                <div class="section__wrapper">
+                    <h2 class="section__title section__title--h2">Паста</h2>
+                    <div class="section__products products">
+                        <ul class="products__list">
+                            <li class="products__item">
+                                <div class="products__product product">
+                                    <div class="product__header">
+                                        <img class="product__image" src="img/kevetki_trufel.png" alt="С креветками и трюфелями">
+                                        <div class="product__label label">New</div>
+                                    </div>
+                                    <div class="product__main">
+                                        <h3 class="product__title section__title section__title--h3">С креветками и трюфелями</h3>
+                                        <p class="product__text">Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан. 350 г</p>
+                                    </div>
+                                    <div class="product__footer">
+                                        <div class="product__price">от 600 ₽</div>
+                                        <button class="product__button btn btn--add">В корзину</button>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="products__item">
-                            <div class="products__product product">
-                                <img class="product__image" src="img/kevetki_trufel.png" alt="С креветками и трюфелями">
-                                <h3 class="product__title">С креветками и трюфелями</h3>
-                                <p class="product__text">Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан. 350 г</p>
-                                <div class="product__select">
-                                    <div class="product__price">от 600 ₽</div>
-                                    <button class="product__button btn btn--add">В корзину</button>
+                            </li>
+                            <li class="products__item">
+                                <div class="products__product product">
+                                    <div class="product__header">
+                                        <img class="product__image" src="img/kevetki_trufel.png" alt="С креветками и трюфелями">
+                                        <div class="product__label label">New</div>
+                                    </div>
+                                    <div class="product__main">
+                                        <h3 class="product__title section__title section__title--h3">С креветками и трюфелями</h3>
+                                        <p class="product__text">Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан. 350 г</p>
+                                    </div>
+                                    <div class="product__footer">
+                                        <div class="product__price">от 600 ₽</div>
+                                        <button class="product__button btn btn--add">В корзину</button>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="products__item">
-                            <div class="products__product product">
-                                <img class="product__image" src="img/kevetki_trufel.png" alt="С креветками и трюфелями">
-                                <h3 class="product__title">С креветками и трюфелями</h3>
-                                <p class="product__text">Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан. 350 г</p>
-                                <div class="product__select">
-                                    <div class="product__price">от 600 ₽</div>
-                                    <button class="product__button btn btn--add">В корзину</button>
+                            </li>
+                            <li class="products__item">
+                                <div class="products__product product">
+                                    <div class="product__header">
+                                        <img class="product__image" src="img/kevetki_trufel.png" alt="С креветками и трюфелями">
+                                        <div class="product__label label">New</div>
+                                    </div>
+                                    <div class="product__main">
+                                        <h3 class="product__title section__title section__title--h3">С креветками и трюфелями</h3>
+                                        <p class="product__text">Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан. 350 г</p>
+                                    </div>
+                                    <div class="product__footer">
+                                        <div class="product__price">от 600 ₽</div>
+                                        <button class="product__button btn btn--add">В корзину</button>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="products__item">
-                            <div class="products__product product">
-                                <img class="product__image" src="img/kevetki_trufel.png" alt="С креветками и трюфелями">
-                                <h3 class="product__title">С креветками и трюфелями</h3>
-                                <p class="product__text">Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан. 350 г</p>
-                                <div class="product__select">
-                                    <div class="product__price">от 600 ₽</div>
-                                    <button class="product__button btn btn--add">В корзину</button>
+                            </li>
+                            <li class="products__item">
+                                <div class="products__product product">
+                                    <div class="product__header">
+                                        <img class="product__image" src="img/kevetki_trufel.png" alt="С креветками и трюфелями">
+                                        <div class="product__label label">New</div>
+                                    </div>
+                                    <div class="product__main">
+                                        <h3 class="product__title section__title section__title--h3">С креветками и трюфелями</h3>
+                                        <p class="product__text">Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан. 350 г</p>
+                                    </div>
+                                    <div class="product__footer">
+                                        <div class="product__price">от 600 ₽</div>
+                                        <button class="product__button btn btn--add">В корзину</button>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="products__item">
-                            <div class="products__product product">
-                                <img class="product__image" src="img/kevetki_trufel.png" alt="С креветками и трюфелями">
-                                <h3 class="product__title">С креветками и трюфелями</h3>
-                                <p class="product__text">Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан. 350 г</p>
-                                <div class="product__select">
-                                    <div class="product__price">от 600 ₽</div>
-                                    <button class="product__button btn btn--add">В корзину</button>
+                            </li>
+                            <li class="products__item">
+                                <div class="products__product product">
+                                    <div class="product__header">
+                                        <img class="product__image" src="img/kevetki_trufel.png" alt="С креветками и трюфелями">
+                                        <div class="product__label label">New</div>
+                                    </div>
+                                    <div class="product__main">
+                                        <h3 class="product__title section__title section__title--h3">С креветками и трюфелями</h3>
+                                        <p class="product__text">Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан. 350 г</p>
+                                    </div>
+                                    <div class="product__footer">
+                                        <div class="product__price">от 600 ₽</div>
+                                        <button class="product__button btn btn--add">В корзину</button>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="products__item">
-                            <div class="products__product product">
-                                <img class="product__image" src="img/kevetki_trufel.png" alt="С креветками и трюфелями">
-                                <h3 class="product__title">С креветками и трюфелями</h3>
-                                <p class="product__text">Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан. 350 г</p>
-                                <div class="product__select">
-                                    <div class="product__price">от 600 ₽</div>
-                                    <button class="product__button btn btn--add">В корзину</button>
+                            </li>
+                            <li class="products__item">
+                                <div class="products__product product">
+                                    <div class="product__header">
+                                        <img class="product__image" src="img/kevetki_trufel.png" alt="С креветками и трюфелями">
+                                        <div class="product__label label">New</div>
+                                    </div>
+                                    <div class="product__main">
+                                        <h3 class="product__title section__title section__title--h3">С креветками и трюфелями</h3>
+                                        <p class="product__text">Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан. 350 г</p>
+                                    </div>
+                                    <div class="product__footer">
+                                        <div class="product__price">от 600 ₽</div>
+                                        <button class="product__button btn btn--add">В корзину</button>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="products__item">
-                            <div class="products__product product">
-                                <img class="product__image" src="img/kevetki_trufel.png" alt="С креветками и трюфелями">
-                                <h3 class="product__title">С креветками и трюфелями</h3>
-                                <p class="product__text">Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан. 350 г</p>
-                                <div class="product__select">
-                                    <div class="product__price">от 600 ₽</div>
-                                    <button class="product__button btn btn--add">В корзину</button>
+                            </li>
+                            <li class="products__item">
+                                <div class="products__product product">
+                                    <div class="product__header">
+                                        <img class="product__image" src="img/kevetki_trufel.png" alt="С креветками и трюфелями">
+                                        <div class="product__label label">New</div>
+                                    </div>
+                                    <div class="product__main">
+                                        <h3 class="product__title section__title section__title--h3">С креветками и трюфелями</h3>
+                                        <p class="product__text">Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан. 350 г</p>
+                                    </div>
+                                    <div class="product__footer">
+                                        <div class="product__price">от 600 ₽</div>
+                                        <button class="product__button btn btn--add">В корзину</button>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="products__item">
-                            <div class="products__product product">
-                                <img class="product__image" src="img/kevetki_trufel.png" alt="С креветками и трюфелями">
-                                <h3 class="product__title">С креветками и трюфелями</h3>
-                                <p class="product__text">Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан. 350 г</p>
-                                <div class="product__select">
-                                    <div class="product__price">от 600 ₽</div>
-                                    <button class="product__button btn btn--add">В корзину</button>
+                            </li>
+                            <li class="products__item">
+                                <div class="products__product product">
+                                    <div class="product__header">
+                                        <img class="product__image" src="img/kevetki_trufel.png" alt="С креветками и трюфелями">
+                                        <div class="product__label label">New</div>
+                                    </div>
+                                    <div class="product__main">
+                                        <h3 class="product__title section__title section__title--h3">С креветками и трюфелями</h3>
+                                        <p class="product__text">Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан. 350 г</p>
+                                    </div>
+                                    <div class="product__footer">
+                                        <div class="product__price">от 600 ₽</div>
+                                        <button class="product__button btn btn--add">В корзину</button>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-                    </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>                       
             </div>
         </section>
 
-        <section class="discounts">
-            <div class="discounts__container container">
-                <div class="discounts__wrapper wrapper">
-                    <h2 class="discounts__title">Наши <span class="discounts__title--pink">акции</span></h2>
-                    <div class="discounts__grid">
+        <section class="section">
+            <div class="section__container container">
+                <div class="section__wrapper section__wrapper--discounts">
+                    <h2 class="section__title section__title--h2 section__title--center">Наши <span class="section__title--pink">акции</span></h2>
+                    <div class="section__discounts discounts">
                         <div class="discounts__main">
                             <a class="discounts__link" href="#" title="Скидка">
                                 <img class="discounts__img" src="/img/discount.png" alt="Скидка">
@@ -387,35 +429,30 @@
             </div>
         </section>
 
-        <section class="payment-delivery">
-            <div class="payment-delivery__container container">
-                <div class="payment-delivery__wrapper wrapper">
-                    <h2 class="payment-delivery__title">Оплата и доставка</h2>
-                    <ul class="payment-delivery__list">
-                        <li class="payment-delivery__item payment-delivery__item--1">
-                            
-                            <p class="payment-delivery__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                        </li>
-                        <li class="payment-delivery__item payment-delivery__item--2">
-                            
-                            <p class="payment-delivery__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                        </li>
-                        <li class="payment-delivery__item payment-delivery__item--3">
-                            
-                            <p class="payment-delivery__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                        </li>
-                        <li class="payment-delivery__item payment-delivery__item--4">
-                            
-                            <p class="payment-delivery__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                        </li>
+        <section class="section section--payment-delivery">
+            <div class="section__container container">
+                <div class="section__wrapper section__wrapper--payment-delivery">
+                    <h2 class="section__title section__title--h2 section__title--payment">Оплата и доставка</h2>
+                    <div class="section__payment-delivery payment-delivery">
+                        <ul class="payment-delivery__list">
+                            <li class="payment-delivery__item payment-delivery__item--card">                                
+                                <p class="payment-delivery__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                            </li>
+                            <li class="payment-delivery__item payment-delivery__item--track">                                
+                                <p class="payment-delivery__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                            </li>
+                            <li class="payment-delivery__item payment-delivery__item--note">                                
+                                <p class="payment-delivery__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                            </li>
+                            <li class="payment-delivery__item payment-delivery__item--time">                                
+                                <p class="payment-delivery__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                            </li>
+                        </ul>
 
-
-                    </ul>
-
-                    <div class="payment-delivery__map">
-                        <img class="payment-delivery__img" src="img/map.png" alt="Карта">
+                        <div class="payment-delivery__map">
+                            <img class="payment-delivery__img" src="img/map.png" alt="Карта">
+                        </div>
                     </div>
-
                 </div>
             </div>
         </section>
@@ -428,14 +465,14 @@
 
     <footer class="footer">
             <div class="footer__container container">
-                <div class="footer__wrapper wrapper">
+                <div class="footer__wrapper">
                     <div class="footer__left">
                         <div class="footer__logo logo">
                             <a class="logo__image" href="#" title="Main">
                                 <img class="logo__img" src="img/logo_footer.png" alt="Yabao">
                             </a>
                         </div>
-                        <div class="footer__menu menu">
+                        <nav class="footer__menu menu">
                             <ul class="menu__list menu__list menu__list--footer">
                                 <li class="menu__item menu__item--footer">
                                     <a class="menu__link" href="#" title="Калорийность и состав">Калорийность и состав</a>
@@ -444,9 +481,9 @@
                                     <a class="menu__link" href="#" title="Правовая информация">Правовая информация</a>
                                 </li>
                             </ul>
-                        </div>
+                        </nav>
                             
-                        <div class="footer__social social">
+                        <nav class="footer__social social">
                             <div class="social__title">Мы в соцсетях</div>
                             <div class="social__menu menu">
                                 <ul class="menu__list menu__list--footer">
@@ -464,7 +501,7 @@
                                     </li>
                                 </ul>
                             </div>
-                        </div>
+                        </nav>
 
                         <div class="footer__copyrights">
                             <div class="footer__copyright">
