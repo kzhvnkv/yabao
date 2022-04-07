@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ya Bao Cart</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header__container container">
+            <div class="header__wrapper">
+                <div class="header__side">
+                    <div class="header__left">
+                        <div class="header__logo logo">
+                            <a class="logo__image" href="#" title="Main">
+                                <img class="logo__img" src="img/logo.png" alt="Yabao">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header__right">
+                        <div class="header__steps steps">
+                            <div class="steps__step step">
+                                <div class="step__counter step__counter--active">1</div>
+                                <div class="step__text step__text--active">Корзина</div>
+                            </div>
+                            <div class="steps__step step">
+                                <div class="step__counter">2</div>
+                                <div class="step__text">Оформление заказа</div> 
+                            </div>
+                            <div class="steps__step step">
+                                <div class="step__counter">3</div>
+                                <div class="step__text">Заказ принят</div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="section container">
+                <div class="section__wrapper">
+                    <div class="section__order">
+                        <h1 class="section__title section__title--h1">Заказ на доставку</h1>
+                        <div class="section__form form">
+                            <form class="form__order" action="" method="post">
+                                <fieldset class="form__fieldset">
+                                <div class="form__row">
+                                    <label class="form__label" for="name">Имя</label>
+                                    <div class="form__colgroup form__colgroup--active">
+                                        <div class="form__input">
+                                            <input class="npt npt--edit" type="name" name="name" id="name" required value="Илья">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form__row">
+                                    <label class="form__label" for="phone">Номер телефона</label>
+                                    <div class="form__colgroup">
+                                        <div class="form__input">
+                                            <input class="npt npt--edit" type="phone" name="phone" id="phone" required disabled value="+7 999 999-99-99">
+                                        </div>
+                                        <div class="form__buttons">
+                                            <button class="btn btn--form btn--form-top">Изменить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form__row">
+                                    <label class="form__label" for="address">Адрес доставки</label>
+                                    <div class="form__colgroup form__colgroup--textarea">
+                                        <div class="form__input">
+                                            <div class="form__tag">Дом</div>
+                                            <textarea class="npt npt--edit" name="address" id="address" required disabled value="">ул. КИМа, д. 1, под. Последний, эт. Последний, кв. 22, код Домофон
+                                            </textarea>
+                                        </div>
+                                        <div class="form__buttons">
+                                            <button class="btn btn--form btn--form-top">Изменить</button>
+                                            <button class="btn btn--form btn--form-bottom">Выбрать самовывоз</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form__row">
+                                    <label class="form__label" for="time">Время доставки</label>
+                                    <div class="form__colgroup">
+                                        <div class="form__input">
+                                            <input class="npt npt--edit" type="text" name="time" id="time" required disabled value="Побыстрее">
+                                        </div>
+                                        <div class="form__buttons">
+                                            <button class="btn btn--form btn--form-top">Изменить</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+
+                                
+                                </fieldset>
+                                <fieldset class="form__fieldset">
+
+                                    <h2 class="section__title section__title--h3 section__title--pink">Промокод</h2>
+
+                                    <div class="form__row">
+                                        <div class="form__input form__input--promo">
+                                            <input class="npt npt--edit npt--promo" type="text" name="promo" id="promo" required value="" placeholder="Введите промокод">
+                                        </div>
+                                        <div class="form__buttons form__buttons--promo">
+                                            <button class="btn btn--promo">Применить</button>
+                                        </div>
+                                    </div>
+                                    
+
+
+                                    
+                                </fieldset>
+                            </form>
+
+
+
+
+
+                        </div>
+
+
+                    
+
+                    
+                    </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__wrapper">
+                <div class="footer__left">
+                    <div class="footer__logo logo">
+                        <a class="logo__image" href="#" title="Main">
+                            <img class="logo__img" src="img/logo_footer.png" alt="Yabao">
+                        </a>
+                    </div>
+                    <nav class="footer__menu menu">
+                        <ul class="menu__list menu__list menu__list--footer">
+                            <li class="menu__item menu__item--footer">
+                                <a class="menu__link" href="#" title="Калорийность и состав">Калорийность и состав</a>
+                            </li>
+                            <li class="menu__item menu__item--footer">
+                                <a class="menu__link" href="#" title="Правовая информация">Правовая информация</a>
+                            </li>
+                        </ul>
+                    </nav>
+                        
+                    <nav class="footer__social social">
+                        <div class="social__title">Мы в соцсетях</div>
+                        <div class="social__menu menu">
+                            <ul class="menu__list menu__list--footer">
+                                <li class="menu__item menu__item--social">
+                                    <a class="menu__link" href="#" title="Youtube">Youtube</a>
+                                </li>
+                                <li class="menu__item menu__item--social">
+                                    <a class="menu__link" href="#" title="Facebook">Facebook</a>
+                                </li>
+                                <li class="menu__item menu__item--social">
+                                    <a class="menu__link" href="#" title="Instagram">Instagram</a>
+                                </li>
+                                <li class="menu__item menu__item--social">
+                                    <a class="menu__link" href="#" title="ВКонтакте">ВКонтакте</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+
+                    <div class="footer__copyrights">
+                        <div class="footer__copyright">
+                            YaBao Все праав защищены © 2021
+                        </div>
+                        <div class="footer__paysystem paysystem">
+                            <ul class="paysystem__list">
+                                <li class="paysystem__item">
+                                    <img class="paysystem__img" src="img/pay_visa.png" alt="Visa">
+                                </li>
+                                <li class="paysystem__item">
+                                    <img class="paysystem__img" src="img/pay_paypal.png" alt="Paypal">
+                                </li>
+                                <li class="paysystem__item">
+                                    <img class="paysystem__img" src="img/pay_mastercard.png" alt="Mastercard">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                           
+                </div>
+
+                <div class="footer__right">
+                    <div class="footer__title">
+                        Остались вопросы? А мы всегда на связи:
+                    </div>
+                    <div class="footer__messengers messengers">
+                        <ul class="messengers__list">
+                            <li class="messenger__item">
+                                <a class="messenger__link" href="#" title="Viber">
+                                    <span class="messenger__button button">
+                                        <img class="messenger__img" src="img/mess_viber.png" alt="Viber">
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="messenger__item">
+                                <a class="messenger__link" href="#" title="Skype">
+                                    <span class="messenger__button button">
+                                        <img class="messenger__img" src="img/mess_skype.png" alt="Skype">
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="messenger__item">
+                                <a class="messenger__link" href="#" title="Facebook">
+                                    <span class="messenger__button button">
+                                        <img class="messenger__img" src="img/mess_fb.png" alt="Facebook">
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="messenger__item">
+                                <a class="messenger__link" href="#" title="Telegram">
+                                    <span class="messenger__button button">
+                                        <img class="messenger__img" src="img/mess_tg.png" alt="Telegram">
+                                    </span>
+                                </a>
+                            </li>
+
+                            <li class="messenger__item">
+                                <a class="messenger__link" href="#" title="Facebook">
+                                    <span class="messenger__button button">
+                                        <img class="messenger__img" src="img/mess_fb_s.png" alt="Facebook">
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="messenger__item">
+                                <a class="messenger__link" href="#" title="VKontakte">
+                                    <span class="messenger__button btn">
+                                        <img class="messenger__img" src="img/mess_vk.png" alt="VKontakte">
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="messenger__item">
+                                <a class="messenger__link" href="#" title="Message">
+                                    <span class="messenger__button messenger__button--last button">
+                                        Написать нам
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        
+
+
+
+                    </div>
+                    
+                    
+                    <div class="footer__link link">
+                        <a class="link__target" href="tel:88003333662" title="88003333662">8 800 333-36-62</a>
+                    </div>
+
+                    <div class="footer__callback callback">
+                        <button class="callback__button btn btn--call">Заказать звонок</button>
+                    </div>
+
+
+
+
+
+
+                </div>
+
+
+
+            </div>
+        </div>
+</footer>
+
+
+
+
+</body>
+</html>
