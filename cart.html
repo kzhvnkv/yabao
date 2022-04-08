@@ -49,71 +49,156 @@
     <main>
         <section class="section">
             <div class="section container">
-                <div class="section__wrapper">
+                <div class="section__wrapper section__wrapper--cart">
                     <div class="section__order">
                         <h1 class="section__title section__title--h1">Заказ на доставку</h1>
                         <div class="section__form form">
-                            <form class="form__order" action="" method="post">
+                            <form class="form__order" action="#" method="post">
                                 <fieldset class="form__fieldset">
                                     <div class="form__row">
-                                        <label class="form__label" for="name">Имя</label>
-                                        <div class="form__colgroup form__colgroup--active">
-                                            <div class="form__input">
-                                                <input class="npt npt--edit" type="name" name="name" id="name" required value="Илья">
-                                            </div>
-                                        </div>
+                                        <label class="form__label form__label--main" for="name">Имя</label>
+                                        <input class="form__input form__input--active npt npt--edit" type="text" name="name" id="name" required value="Илья">
                                     </div>
                                     <div class="form__row">
-                                        <label class="form__label" for="phone">Номер телефона</label>
-                                        <div class="form__colgroup">
-                                            <div class="form__input">
-                                                <input class="npt npt--edit" type="phone" name="phone" id="phone" required disabled value="+7 999 999-99-99">
-                                            </div>
-                                            <div class="form__buttons">
-                                                <button class="btn btn--form btn--form-top">Изменить</button>
-                                            </div>
-                                        </div>
+                                        <label class="form__label form__label--main" for="phone">Номер телефона</label>
+                                        <input class="form__input npt npt--edit" type="tel" name="phone" id="phone" required value="+7 999 999-99-99">
+                                        <button class="btn btn--form btn--form-top">Изменить</button>   
                                     </div>
                                     <div class="form__row">
-                                        <label class="form__label" for="address">Адрес доставки</label>
-                                        <div class="form__colgroup form__colgroup--textarea">
-                                            <div class="form__input">
-                                                <div class="form__tag">Дом</div>
-                                                <textarea class="npt npt--edit" name="address" id="address" required disabled value="">ул. КИМа, д. 1, под. Последний, эт. Последний, кв. 22, код Домофон
-                                                </textarea>
-                                            </div>
-                                            <div class="form__buttons">
-                                                <button class="btn btn--form btn--form-top">Изменить</button>
-                                                <button class="btn btn--form btn--form-bottom">Выбрать самовывоз</button>
-                                            </div>
-                                        </div>
+                                        <label class="form__label form__label--main" for="address">Адрес доставки</label>
+                                        <div class="form__tag">Дом</div>
+                                        <textarea class="form__input form__input--textarea npt npt--edit" name="address" id="address" required>ул. КИМа, д. 1, под. Последний, эт. Последний, кв. 22, код Домофон</textarea>
+                                        <button class="btn btn--form btn--form-top">Изменить</button>
+                                        <button class="btn btn--form btn--form-bottom">Выбрать самовывоз</button>
                                     </div>
                                     <div class="form__row">
-                                        <label class="form__label" for="time">Время доставки</label>
-                                        <div class="form__colgroup">
-                                            <div class="form__input">
-                                                <input class="npt npt--edit" type="text" name="time" id="time" required disabled value="Побыстрее">
-                                            </div>
-                                            <div class="form__buttons">
-                                                <button class="btn btn--form btn--form-top">Изменить</button>
-                                            </div>
-                                        </div>
+                                        <label class="form__label form__label--main" for="time">Время доставки</label>
+                                        <input class="form__input npt npt--edit" type="text" name="time" id="time" required value="Побыстрее">
+                                        <button class="btn btn--form btn--form-top">Изменить</button>   
                                     </div>
                                 </fieldset>
                                 <fieldset class="form__fieldset">
                                     <h3 class="section__title section__title--h3 section__title--pink">Промокод</h3>
-                                    <div class="form__row">
-                                        <div class="form__input form__input--promo">
-                                            <input class="npt npt--edit npt--promo" type="text" name="promo" id="promo" value="" placeholder="Введите промокод">
-                                        </div>
-                                        <div class="form__buttons form__buttons--promo">
+                                    <div class="form__row form__row--middle">
+                                        
+                                            <input class="form__input form__input--active npt npt--edit npt--promo" type="text" name="promo" id="promo" value="" placeholder="Введите промокод">
+                                        
+                                        
                                             <button class="btn btn--promo">Применить</button>
-                                        </div>
+                                        
                                     </div>
                                 </fieldset>
+                                <fieldset class="form__fieldset form__fieldset--payment">
+                                    <h2 class="section__title section__title--h2">Способы оплаты</h2>
+                                    <label class="form__label form__label--nfc">
+                                    <input class="form__radio" type="radio" name="payment" value="card" id="card">
+                                        Картой на сайте
+                                    </label>
+                                    <label class="form__label">
+                                    <input class="form__radio" type="radio" name="payment" value="cash" id="cash">
+                                        Наличными
+                                    </label>
+
+                                    <div class="form__row">
+                                        <label class="form__label form__label--change" for="change">С какой суммы подготовить сдачу?</label>
+                                        <div class="form__change">
+                                            <input class="form__input form__input--active form__input--rub npt npt--rub" type="text" name="change" id="change" required value="">
+                                        </div>
+
+                                        <input class="form__checkbox" type="checkbox" name="no-change" id="no-change" value="">
+                                        <label class="form__label form__label--change" for="no-change">Без сдачи</label>
+
+                                    </div>
+                                    
+                                </fieldset>
+                                
+                                <fieldset class="form__fieldset">
+                                    <input class="form__checkbox" type="checkbox" name="subscribe" id="subscribe" value="">
+                                    <label class="form__label form__label--change" for="subscribe">Сообщать о бонусах, акциях и новых продуктах</label>
+                                    
+                                    
+
+                                </fieldset>
+
+
+
+
+
+
+
+
+
+
+
+
+
                             </form>
                         </div>
                     </div>
+                    <div class="section__compound">
+                        <div class="compound">
+                            <h3 class="compound__title section__title section__title--h4">Состав заказа</h3>
+                            <div class="compound__elements">
+                            <ul class="compound__list">
+                                <li class="compound__item in-order">
+                                    <div class="in-order__description">
+                                        <div class="in-order__title">Комбо за 599 ₽</div>
+                                        <div class="in-order__text">Средняя 30 см, традиционное тесто</div>
+                                    </div>
+                                    <div class="in-order__price">599₽</div>
+                                </li>
+                                <li class="compound__item in-order">
+                                    <div class="in-order__description">
+                                        <div class="in-order__title">Комбо за 599 ₽</div>
+                                        <div class="in-order__text">Средняя 30 см, традиционное тесто</div>
+                                    </div>
+                                    <div class="in-order__price">599₽</div>
+                                </li>
+                                <li class="compound__item in-order">
+                                    <div class="in-order__description">
+                                        <div class="in-order__title">Комбо за 599 ₽</div>
+                                        <div class="in-order__text">Средняя 30 см, традиционное тесто</div>
+                                    </div>
+                                    <div class="in-order__price">599₽</div>
+                                </li>
+                                <li class="compound__item in-order">
+                                    <div class="in-order__description">
+                                        <div class="in-order__title">Комбо за 599 ₽</div>
+                                        <div class="in-order__text">Средняя 30 см, традиционное тесто</div>
+                                    </div>
+                                    <div class="in-order__price">599₽</div>
+                                </li>
+                                <li class="compound__item in-order">
+                                    <div class="in-order__description">
+                                        <div class="in-order__title">Комбо за 599 ₽</div>
+                                        <div class="in-order__text">Средняя 30 см, традиционное тесто</div>
+                                    </div>
+                                    <div class="in-order__price">599₽</div>
+                                </li>   
+                                <li class="compound__item in-order">
+                                    <div class="in-order__description">
+                                        <div class="in-order__title">Комбо за 599 ₽</div>
+                                        <div class="in-order__text">Средняя 30 см, традиционное тесто</div>
+                                    </div>
+                                    <div class="in-order__price">599₽</div>
+                                </li>   
+                            </ul>
+                            <div class="in-order__total">
+                                <div class="in-order__title in-order__title--total">Сумма заказа</div>
+                                <div class="in-order__price in-order__price--total">1048₽</div>
+
+
+                            </div>
+                            <div class="compound__delivery">
+                                Бесплатная доставка
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -236,30 +321,14 @@
                                 </a>
                             </li>
                         </ul>
-                        
-
-
-
                     </div>
-                    
-                    
                     <div class="footer__link">
                         <a class="link link--red" href="tel:88003333662" title="88003333662">8 800 333-36-62</a>
                     </div>
-
                     <div class="footer__callback callback">
                         <button class="callback__button btn btn--call">Заказать звонок</button>
                     </div>
-
-
-
-
-
-
                 </div>
-
-
-
             </div>
         </div>
 </footer>

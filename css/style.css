@@ -45,6 +45,11 @@ body {
     color: #231F20;
 }
 
+.section__title--h4 {
+    font-size: 15px;
+    color: #FF2E65;
+}
+
 .section__title--center {
     margin-bottom: 45px;
     text-align: center;
@@ -749,10 +754,12 @@ body {
 
 .form__row {
     display: flex;
+    position: relative;
     padding-bottom: 14px;
 }
 
 .npt--edit {
+    width: 100%;
     border: 0;
     background-color: transparent;
     opacity: 82%;
@@ -764,6 +771,11 @@ body {
     font-weight: 600;
     line-height: 1.65;
     color: #231F20AA;
+    /* width: 190px; */
+}
+
+.form__label--main {
+    width: 190px;
 }
 
 .form__colgroup {
@@ -791,9 +803,25 @@ body {
 }
 
 .form__input {
+    flex-grow: 1;
     display: flex;
-    flex-direction: column;
-    width: 336px;
+    /* margin-left: auto; */
+    padding: 10px 20px;
+    padding-right: 180px;
+    width: 540px;
+    background-color: #E3ECF5;
+    border: 0;
+    border-radius: 7px;
+    border: 1.5px solid #E2E2E9;
+}
+
+.form__input--active {
+    background-color: #FFF;
+}
+
+.form__input--textarea {
+    padding: 42px 20px;
+    padding-right: 180px;
 }
 
 .form__input--promo {
@@ -801,10 +829,15 @@ body {
 }
 
 .form__tag {
+    position: absolute;
+    top: 7px;
+    left: 210px;
     font-size: 17px;
     font-weight: 600;
     line-height: 1.65;
-    opacity: 82%;
+    color: #0E0C0D;
+    opacity: 0.82;
+    z-index: 1;
 }
 
 .form__buttons {
@@ -818,14 +851,22 @@ body {
 }
 
 .btn--form {
-    padding: 0;
+    position: absolute;
+    padding: 5px;
     text-align: right;
-    background-color: transparent;
     color: #FF2E65;
+    background-color: transparent;
+}
+
+.btn--form-top {
+    right: 15px;
+    top: 7px;
 }
 
 .btn--form-bottom {
-    margin-top: auto;
+    right: 15px;
+    bottom: 7px;
+    padding-bottom: 18px;
 }
 
 .btn--promo {
@@ -846,3 +887,159 @@ body {
     width: 220px;
     height: 44px;
 }
+
+.form__row--middle {
+    width: 353px;
+}
+
+.npt--rub {
+    width: 116px;
+    flex-grow: 0;
+    padding: 9px 17px;
+}
+
+.form__input--rub {
+    margin-right: 24px;
+    padding-right: 30px;
+}
+
+.form__change {
+    position: relative;
+}
+
+.form__change::after{
+    content: "₽";
+    position: absolute;
+    left: 90px;
+    top: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.75;
+    color: #231F20;
+}
+
+.form__label--nfc {
+    /* position: relative; */
+}
+
+.form__label--nfc::after {
+    content: " ";
+    /* position: absolute; */
+    width: 36px;
+    height: 36px;
+    background-image: url("../img/nfc.png");
+    background-repeat: no-repeat;
+}
+
+.form__label--change {
+    margin-right: 24px;
+
+}
+
+.form__fieldset--payment {
+    background-color: #F1F2F5;
+    padding: 40px 30px; 
+    border-radius: 6px;
+}
+
+.form__checkbox {
+    align-self: center;
+}
+
+
+/* CART COMPOUND */
+.section__wrapper--cart {
+    display: flex;
+}
+
+.section__compound {
+    width: 380px;
+    /* background-color: #696F7A; */
+    padding-left: 43px;
+    
+}
+
+.compound {
+    padding: 20px 22px;
+    box-shadow: 0px 4px 28px rgba(0, 0, 0, 0.08);
+
+}
+
+.compound__list {
+    overflow: auto;
+    width: 316px;
+    height: 270px;
+    padding-right: 15px;
+    margin-bottom: 68px;
+}
+
+.in-order {
+    display: flex;
+}
+
+.compound__item {
+    margin-bottom: 20px;
+}
+
+.in-order__title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.75;
+}
+
+.in-order__text {
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 2;
+    color: rgba(35, 31, 32, 0.5);
+}
+
+
+
+.in-order__price {
+    margin-left:auto;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.64;
+}
+
+.compound__list::-webkit-scrollbar {
+    width: 7px;
+    background-color: #FFF;
+}
+  
+.compound__list::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #E1E1E1;
+}
+  
+.compound__list::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+
+.in-order__total {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.in-order__title--total {
+    opacity: 0.6;
+}
+
+.in-order__price--total {
+    margin-left: auto;
+}
+
+
+.compound__delivery {
+    text-align: center;
+    color: #213134;
+    opacity: 0.6;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 2;
+}
+
