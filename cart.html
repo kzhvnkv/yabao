@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
+    <header class="header header--cart">
         <div class="header__container container">
             <div class="header__wrapper">
                 <div class="header__side">
@@ -31,10 +31,12 @@
                                 <div class="step__counter step__counter--active">1</div>
                                 <div class="step__text step__text--active">Корзина</div>
                             </div>
+                            <div class="steps__line"></div>
                             <div class="steps__step step">
                                 <div class="step__counter">2</div>
                                 <div class="step__text">Оформление заказа</div> 
                             </div>
+                            <div class="steps__line"></div>
                             <div class="steps__step step">
                                 <div class="step__counter">3</div>
                                 <div class="step__text">Заказ принят</div> 
@@ -90,37 +92,37 @@
                                 </fieldset>
                                 <fieldset class="form__fieldset form__fieldset--payment">
                                     <h2 class="section__title section__title--h2">Способы оплаты</h2>
-                                    <label class="form__label form__label--nfc">
                                     <input class="form__radio" type="radio" name="payment" value="card" id="card">
-                                        Картой на сайте
-                                    </label>
-                                    <label class="form__label">
-                                    <input class="form__radio" type="radio" name="payment" value="cash" id="cash">
-                                        Наличными
-                                    </label>
-
-                                    <div class="form__row">
+                                    <label class="form__label form__label--radio form__label--nfc" for="card"><span class="label__icon"></span>Картой на сайте</label>
+                                    <input class="form__radio" type="radio" name="payment" value="cash" id="cash" checked="checked">
+                                    <label class="form__label form__label--radio" for="cash">Наличными</label>
+                                    <div class="form__row form__row--change">
                                         <label class="form__label form__label--change" for="change">С какой суммы подготовить сдачу?</label>
                                         <div class="form__change">
-                                            <input class="form__input form__input--active form__input--rub npt npt--rub" type="text" name="change" id="change" required value="">
+                                            <input class="form__input form__input--active form__input--rub npt npt--rub" type="text" name="change" id="change" value="">
                                         </div>
-
                                         <input class="form__checkbox" type="checkbox" name="no-change" id="no-change" value="">
-                                        <label class="form__label form__label--change" for="no-change">Без сдачи</label>
+                                        <label class="form__label form__label--checkbox" for="no-change">Без сдачи</label>
+                                        
+                                        
 
                                     </div>
                                     
                                 </fieldset>
                                 
-                                <fieldset class="form__fieldset">
-                                    <input class="form__checkbox" type="checkbox" name="subscribe" id="subscribe" value="">
-                                    <label class="form__label form__label--change" for="subscribe">Сообщать о бонусах, акциях и новых продуктах</label>
+                                <fieldset class="form__fieldset form__fieldset--bonus">
+                                    <input class="form__checkbox" type="checkbox" name="subscribe" id="subscribe" value="" checked="checked">
+                                    <label class="form__label form__label--checkbox" for="subscribe">Сообщать о бонусах, акциях и новых продуктах</label>
+                                    <button class="btn btn--info form__info">i</button>
                                     
                                     
 
                                 </fieldset>
 
-
+                                <div class="form__nav">
+                                <a class="form__link link link--back" src="#" title="Назад в корзину">Назад в корзину</a>
+                                <input class="btn btn--submit form__submit" type="submit" value="Оформить заказ за 1048 ₽">
+                                </div>
 
 
 

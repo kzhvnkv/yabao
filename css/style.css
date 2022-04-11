@@ -91,6 +91,12 @@ body {
     font-weight: 700;
 }
 
+.link--back {
+    color: rgba(35, 31, 32, 0.8);
+    font-weight: 700;
+    line-height: 1.86;
+}
+
 .btn {
     cursor: pointer;
     font-size: 14px;
@@ -151,6 +157,25 @@ body {
     border-radius: 13px;
     width: 104px;
     height: 56px;
+}
+
+.btn--info {
+    display: inline-block;
+    padding: 0;
+    width: 26px;
+    height: 26px;
+    background-color: #F1F2F5;
+    border-radius: 30px;
+    color: #231F20;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 2;
+}
+
+.btn--submit {
+    padding: 16px 39px;    
+    font-size: 15px;
+
 }
 
 .npt {
@@ -672,12 +697,19 @@ body {
 
 /* CART */
 /* CART HEADER */
+.header--cart {
+    border-bottom: 1px solid #ECECF1;
+    padding-bottom: 15px;
+    margin-bottom: 32px;
+}
+
 .header__steps {
     display: flex;
 }
 
 .steps {
     display: flex;
+    align-items: center;
 }
 
 .step {
@@ -707,8 +739,12 @@ body {
 }
 
 .step__text {
+    position: absolute;
+    width: 250px;
+    top: 50px;
+    text-align: center;
     font-size: 14px;
-    line-height: 2;
+    /* line-height: 2; */
     font-weight: 600;
     color: rgba(14, 12, 13, 0.6);
 }
@@ -718,24 +754,29 @@ body {
 }
 
 .steps__step {
-    margin-left: 50px;
+    /* margin-left: 50px; */
 }
 
 .steps__step {
     position: relative;
 }
  
-
-/* 
-.steps__step::before {
+.steps__line {
+    width: 100px;
+    border-bottom: 2px dashed #B8C5D0;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+ 
+/* .steps__step::after {
     content: "";
     position: absolute;
     width: 100px;
     top: 18px;
-    left: calc(100% - 10px);
+    left: 72px;
     border-bottom: 2px dashed #B8C5D0;
 
-} */
+}  */
 
 /* ORDER */
 
@@ -922,28 +963,135 @@ body {
     /* position: relative; */
 }
 
-.form__label--nfc::after {
+.label__icon::before {
     content: " ";
-    /* position: absolute; */
+    display: inline-block;
+    vertical-align: middle;
     width: 36px;
     height: 36px;
+    margin-right: 7px;
     background-image: url("../img/nfc.png");
     background-repeat: no-repeat;
 }
 
-.form__label--change {
-    margin-right: 24px;
 
-}
 
 .form__fieldset--payment {
     background-color: #F1F2F5;
-    padding: 40px 30px; 
+    padding: 40px 30px;
+    margin-bottom: 33px; 
     border-radius: 6px;
 }
 
-.form__checkbox {
-    align-self: center;
+
+.form__radio, .form__checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.form__label--radio, .form__label--checkbox {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    color: #213134;
+}
+
+.form__label--radio::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 2px solid #FF2E65;
+    border-radius: 25px;
+    margin-right: 18px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+
+}
+
+.form__radio:checked+.form__label::before {
+    background-image: url("../img/dot_radio.png");
+}
+
+.form__radio:not(:disabled):not(:checked)+.form__label:hover::before {
+    border: 4px solid #FF2E65;
+}
+
+.form__row--change {
+    margin-top: 28px;
+}
+
+.form__label--change {
+    margin-right: 24px;
+    font-weight: 700;
+}
+
+.form__label--checkbox {
+    padding-top: 0;
+    font-weight: 700;
+}
+
+.form__label--checkbox::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 2px solid #FF2E65;
+    border-radius: 3px;
+    margin-right: 8px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+.form__checkbox:checked+.form__label--checkbox::before {
+    background-image: url("../img/dot_radio.png");
+}
+
+.form__checkbox:not(:disabled)+.form__label--checkbox:hover::before {
+    border: 4px solid #FF2E65;
+}
+
+
+.form__fieldset--bonus {
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.form__info {
+    margin-left: 23px;
+}
+
+.form__submit {
+    margin-left: auto;
+
+}
+
+.form__nav {
+    display: flex;
+}
+
+.form__link {
+    cursor: pointer;
+}
+
+
+
+.form__link::before {
+    content: "";
+    margin-right: 15px;
+    width: 10px;
+    height: 15px;
+    background-image: url("../img/less_sign.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+
 }
 
 
