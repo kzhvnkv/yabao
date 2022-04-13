@@ -26,22 +26,28 @@
                         </div>
                     </div>
                     <div class="header__right">
-                        <div class="header__steps steps">
-                            <div class="steps__step step">
-                                <div class="step__counter step__counter--active">1</div>
+                        <ul class="header__steps steps">
+                            <li class="steps__step step">
+                                <div class="step__wrapper">
+                                    <div class="step__counter step__counter--active">1</div>
+                                </div>
                                 <div class="step__text step__text--active">Корзина</div>
-                            </div>
-                            <div class="steps__line"></div>
-                            <div class="steps__step step">
-                                <div class="step__counter">2</div>
+                            </li>
+                            <!-- <div class="steps__line"></div> -->
+                            <li class="steps__step step">
+                                <div class="step__wrapper">
+                                    <div class="step__counter">2</div>
+                                </div>
                                 <div class="step__text">Оформление заказа</div> 
-                            </div>
-                            <div class="steps__line"></div>
-                            <div class="steps__step step">
-                                <div class="step__counter">3</div>
+                            </li>
+                            <!-- <div class="steps__line"></div> -->
+                            <li class="steps__step step">
+                                <div class="step__wrapper">
+                                    <div class="step__counter">3</div>
+                                </div>
                                 <div class="step__text">Заказ принят</div> 
-                            </div>
-                        </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -59,31 +65,31 @@
                                 <fieldset class="form__fieldset">
                                     <div class="form__row">
                                         <label class="form__label form__label--main" for="name">Имя</label>
-                                        <input class="form__input form__input--active npt npt--edit" type="text" name="name" id="name" required value="Илья">
+                                        <input class="form__input form__input--active npt npt--edit" type="text" name="name" id="name" required value="Илья" inputmode="text">
                                     </div>
                                     <div class="form__row">
                                         <label class="form__label form__label--main" for="phone">Номер телефона</label>
-                                        <input class="form__input npt npt--edit" type="tel" name="phone" id="phone" required value="+7 999 999-99-99">
-                                        <button class="btn btn--form btn--form-top">Изменить</button>   
+                                        <input class="form__input npt npt--edit" type="tel" inputmode="tel" name="phone" id="phone" required value="+7 999 999-99-99">
+                                        <button type="button" class="btn btn--form btn--form-top">Изменить</button>   
                                     </div>
                                     <div class="form__row">
                                         <label class="form__label form__label--main" for="address">Адрес доставки</label>
-                                        <div class="form__tag">Дом</div>
-                                        <textarea class="form__input form__input--textarea npt npt--edit" name="address" id="address" required>ул. КИМа, д. 1, под. Последний, эт. Последний, кв. 22, код Домофон</textarea>
-                                        <button class="btn btn--form btn--form-top">Изменить</button>
-                                        <button class="btn btn--form btn--form-bottom">Выбрать самовывоз</button>
+                                        <button class="btn btn--place form__place" type="button">Дом</button>
+                                        <textarea class="form__input form__input--textarea npt npt--edit" type="text" inputmode="text" name="address" id="address" required>ул. КИМа, д. 1, под. Последний, эт. Последний, кв. 22, код Домофон</textarea>
+                                        <button class="btn btn--form btn--form-top" type="button">Изменить</button>
+                                        <button class="btn btn--form btn--form-bottom" type="button">Выбрать самовывоз</button>
                                     </div>
                                     <div class="form__row">
                                         <label class="form__label form__label--main" for="time">Время доставки</label>
-                                        <input class="form__input npt npt--edit" type="text" name="time" id="time" required value="Побыстрее">
-                                        <button class="btn btn--form btn--form-top">Изменить</button>   
+                                        <input class="form__input npt npt--edit" type="text" inputmode="text" name="time" id="time" required value="Побыстрее">
+                                        <button class="btn btn--form btn--form-top" type="button">Изменить</button>   
                                     </div>
                                 </fieldset>
                                 <fieldset class="form__fieldset">
                                     <h3 class="section__title section__title--h3 section__title--pink">Промокод</h3>
                                     <div class="form__row form__row--middle">
-                                        <input class="form__input form__input--active npt npt--edit npt--promo" type="text" name="promo" id="promo" value="" placeholder="Введите промокод">
-                                        <button class="btn btn--promo">Применить</button>                                        
+                                        <input class="form__input form__input--active npt npt--edit npt--promo" type="text" inputmode="text" name="promo" id="promo" value="" placeholder="Введите промокод">
+                                        <button class="btn btn--promo" type="button">Применить</button>                                        
                                     </div>
                                 </fieldset>
                                 <fieldset class="form__fieldset form__fieldset--payment">
@@ -95,7 +101,7 @@
                                     <div class="form__row form__row--change">
                                         <label class="form__label form__label--change" for="change">С какой суммы подготовить сдачу?</label>
                                         <div class="form__change">
-                                            <input class="form__input form__input--active form__input--rub npt npt--rub" type="text" name="change" id="change" value="">
+                                            <input class="form__input form__input--active form__input--rub npt npt--rub" type="number" inputmode="number" name="change" id="change" value="">
                                         </div>
                                         <input class="form__checkbox" type="checkbox" name="no-change" id="no-change" value="">
                                         <label class="form__label form__label--checkbox" for="no-change">Без сдачи</label>
@@ -104,11 +110,11 @@
                                 <fieldset class="form__fieldset form__fieldset--bonus">
                                     <input class="form__checkbox" type="checkbox" name="subscribe" id="subscribe" value="" checked="checked">
                                     <label class="form__label form__label--checkbox" for="subscribe">Сообщать о бонусах, акциях и новых продуктах</label>
-                                    <button class="form__info btn btn--info">i</button>
+                                    <button class="form__info btn btn--info" type="button">i</button>
                                 </fieldset>
                                 <div class="form__row">
                                     <a class="form__link link link--back" href="#" title="Назад в корзину">Назад в корзину</a>
-                                    <input class="btn btn--submit form__submit" type="submit" value="Оформить заказ за 1048 ₽">
+                                    <button class="btn btn--submit form__submit" type="submit" value="">Оформить заказ за 1048 ₽</button>
                                 </div>
                             </form>
                         </div>
